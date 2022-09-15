@@ -1,1 +1,1 @@
-the mandatory readme file appears here
+ the mandatory readme file in every directory
