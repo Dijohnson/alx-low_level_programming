@@ -2,22 +2,19 @@
 include "main.h"
 
 /**
- * print_most_numbers - prints numbers except 2 and 4
+ * print_most_numbers - prints numbers 
  *
- * Return: return nothing
  */
-
 void print_most_numbers(void)
 {
-	int n;
+	int num;
 
-	for (n = 48; n < 58; n++)
+	for (num = '0'; num <= '9'; num++)
 	{
-		if ((n == 58) || (n == 52))
+		if (num != '2' && num != '4')
 		{
-			continue;
+			_putchar(num);
 		}
-		putchar(n);
 	}
-	putchar(10);
+	_putchar('\n');
 }
