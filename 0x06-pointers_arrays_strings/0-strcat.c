@@ -7,18 +7,19 @@
  *
  * Return: A pointer to the destination string @dest.
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int len = 0, i;
+	int i;
+	int j;
 
-	while (dest[len])
-		len++;
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
 
-	for (i = 0; src[i] != 0; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[len] = src[i];
-		len += 1;
+		dest[j + i] = src[i];
 	}
-	dest[len] = '\0';
+	dest[j + i] = '\0';
+
 	return (dest);
 }
